@@ -1,0 +1,109 @@
+:root {
+  --corBackground: #2f2e41;
+  --corPrincipal: #00bfa6;
+  --corSegund: #c2c2c2;
+  --corWhite: #ffffff;
+
+  --fontPrincipal: "Open Sans", "sans-serif";
+  --fontSegund: "JetBrains Mono", "monospace";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--corWhite);
+  background: var(--corBackground);
+}
+
+#pagina {
+  width: 1092px;
+  margin-inline: auto;
+
+  padding-top: 71px;
+}
+
+#pagina nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-family: var(--fontSegund);
+
+  color: var(--corWhite);
+}
+
+#principal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  text-align: center;
+
+  margin: 101px 0 235px 0;
+}
+
+#principal img {
+  width: 401px;
+  height: 283px;
+}
+
+#principal h1 {
+  font-size: 36px;
+
+  margin-bottom: 51px;
+}
+span {
+  color: var(--corPrincipal);
+}
+
+#principal p {
+  font-size: 16px;
+  font-family: var(--fontPrincipal);
+  line-height: 28px;
+
+  color: var(--corSegund);
+
+  width: 600px;
+}
+
+#rodape {
+  display: block;
+  text-align: center;
+  font-family: var(--fontSegund);
+  font-size: 14px;
+}
+
+#rodape a {
+  text-decoration: none;
+  color: var(--corWhite);
+}
+
+#rodape div {
+  border: 1px solid var(--corPrincipal);
+  width: 568px;
+  height: 0;
+  margin-inline: auto;
+
+  margin-bottom: 27px;
+}
+
+#lock {
+  position: fixed;
+
+  bottom: 20px;
+  left: 20px;
+}
