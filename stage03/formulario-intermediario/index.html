@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulario Intermediario</title>
+  </head>
+  <body>
+    <main>
+      <h1>mentoria</h1>
+      <p>Preencha formulario abaixo para agendar a sua mentoria</p>
+      <form action="#">
+        <fieldset>
+          <legend>informações pessoais</legend>
+          <div class="line"></div>
+          <div id="container-name">
+            <div class="camp">
+              <label for="name">Nome</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="camp">
+              <label for="last-name">Sobrenome</label>
+              <input type="text" id="last-name" />
+            </div>
+          </div>
+
+          <div class="camp">
+            <label for="email"
+              >Email <span>(digite um email valido)</span></label
+            >
+            <input type="email" id="email" />
+          </div>
+
+          <div class="camp">
+            <label for="password"
+              >Senha <span>(mìnimo de 6 caracteres)</span></label
+            >
+            <input type="password" id="password" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>informações do mentor</legend>
+          <div class="line"></div>
+
+          <div class="camp">
+            <label for="mentor"
+              >Nome do seu mentor <span>(só o primeiro nome)</span></label
+            >
+            <input type="text" id="mentor" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>seus horários disponiveis</legend>
+          <div class="line"></div>
+
+          <div class="camp-mentoria">
+            <h3>primeira mentoria</h3>
+            <div class="container-mentoria">
+              <div class="camp-input-1">
+                <label for="date">Data</label>
+                <input type="text" id="date" onfocus="(this.type='date')" />
+              </div>
+              <div class="camp-input">
+                <label for="of">das</label>
+                <input type="time" id="of" />
+              </div>
+              <div class="camp-input">
+                <label for="up">até</label>
+                <input type="time" id="up" />
+              </div>
+            </div>
+          </div>
+
+          <div class="camp-mentoria">
+            <h3>Segunda mentoria</h3>
+            <div class="container-mentoria">
+              <div class="camp-input-1">
+                <label for="date">Data</label>
+                <input type="text" id="date" onfocus="(this.type='date')" />
+              </div>
+              <div class="camp-input">
+                <label for="of">das</label>
+                <input type="time" id="of" />
+              </div>
+              <div class="camp-input">
+                <label for="up">até</label>
+                <input type="time" id="up" />
+              </div>
+            </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      <footer>
+        <input type="submit">
+      </footer>
+    </main>
+  </body>
+</html>

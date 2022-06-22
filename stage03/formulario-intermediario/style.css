@@ -1,0 +1,192 @@
+:root {
+  font-size: 62.5%;
+
+  --font-primary: Poppins, sans-serif;
+  --font-segundary: Staatliches, cursive;
+
+  --color-primary: #535971;
+  --color-segundary: #ff5374;
+  --color-white-black: #fafafc;
+  --color-white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+
+  background-color: var(--color-white-black);
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 43.6rem;
+  background: var(--color-primary);
+
+  position: absolute;
+  z-index: -1;
+}
+
+main {
+  padding-top: 14rem;
+  width: 750px;
+  margin-inline: auto;
+}
+
+main h1 {
+  font-family: var(--font-segundary);
+  font-size: 4.8rem;
+  line-height: 6rem;
+  color: var(--color-white);
+}
+
+main p {
+  width: 40%;
+
+  margin: 1.8rem 0 5.6rem 0;
+}
+
+form {
+  border-radius: 20px 20px 0px 0px;
+  background: var(--color-white);
+  padding: 64px;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+}
+
+legend {
+  font-family: var(--font-segundary);
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+
+  color: #535971;
+  text-transform: uppercase;
+}
+
+.line {
+  margin: 1.6rem 0 3.6rem 0;
+  border-bottom: 1px solid #e6e6f0;
+}
+
+#container-name {
+  display: flex;
+  align-items: center;
+
+  flex-direction: row;
+  gap: 2.2rem;
+}
+
+#container-name .camp {
+  width: 100%;
+}
+
+.camp {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 1.6rem;
+}
+
+.camp label {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #4e4958;
+}
+
+.camp input {
+  background: var(--color-white-black);
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  height: 5rem;
+}
+
+.camp span {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #c1bccc;
+}
+
+.camp-mentoria h3 {
+  margin-bottom: 0.8rem;
+
+  font-family: var(--font-segundary);
+  font-size: 2rem;
+  line-height: 3.4rem;
+  color: #535971;
+}
+
+.container-mentoria {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.container-mentoria .camp-input-1 {
+  width: 50%;
+}
+
+.container-mentoria .camp-input {
+  width: 25%;
+}
+
+.camp-input,
+.camp-input-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.camp-input label,
+.camp-input-1 label {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #4e4958;
+}
+
+.camp-input input,
+.camp-input-1 input {
+  background: var(--color-white-black);
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  height: 5rem;
+
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  height: 16rem;
+  background: #535971;
+  border-radius: 0px 0px 20px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5.2rem 7.1rem;
+
+  margin-bottom: 10rem;
+}
+
+footer input {
+  width: 100%;
+  height: 100%;
+
+  background: #ff5374;
+  border-radius: 20px;
+
+  font-size: 20px;
+  line-height: 26px;
+  font-family: var(--font-segundary);
+  color: var(--color-white);
+
+  border: none;
+}
